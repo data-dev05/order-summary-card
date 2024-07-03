@@ -1,7 +1,135 @@
 @use "./variables" as *;
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $Pale-blue;
+    font-size: $Font-size-paragraph;
+    font-family: $Family-Red-Hat-Display;
+}
+
+picture {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: -60px;
+}
+
+#card {
+    min-width: 200px;
+    width: 90vw;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+#illustration-hero {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+#information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+h1,
+#plan-name {
+    font-weight: 900;
+    color: $Dark-blue;
+}
+
+#benefits {
+    text-align: center;
+    line-height: 1.6rem;
+    color: $Desaturated-blue;
+    font-weight: 500;
+}
+
+#current-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $Very-pale-blue;
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border-radius: 0.6rem;
+    margin-bottom: 0.5rem;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 57%;
+
+        img {
+            width: 3.8rem;
+        }
+
+        p {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5rem;
+        }
+    }
+
+    a {
+        color: $Bright-blue;
+        font-weight: 900;
+        font-size: 0.85rem;
+
+        &:hover {
+            color: $Bright-blue-hover;
+            text-decoration: none;
+        }
+    }
+}
+
+#plan-price {
+    color: $Desaturated-blue;
+    font-weight: 500;
+}
+
+#button-pay,
+#button-cancel {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    font-family: $Family-Red-Hat-Display;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#button-pay {
+    background-color: $Bright-blue;
+    color: white;
+    box-shadow: 0 1.8rem 1.5rem $Pale-blue;
+
+    &:hover {
+        background-color: $Bright-blue-hover;
+    }
+}
+
+#button-cancel {
+    background: none;
+    color: $Desaturated-blue;
+
+    &:hover {
+        color: $Dark-blue;
+    }
 }

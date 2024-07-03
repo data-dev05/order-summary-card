@@ -5,4 +5,125 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+picture {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: -60px;
+}
+
+#card {
+  min-width: 200px;
+  width: 90vw;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+#illustration-hero {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+}
+
+h1,
+#plan-name {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+#benefits {
+  text-align: center;
+  line-height: 1.6rem;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+#current-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border-radius: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+#current-plan div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 57%;
+}
+#current-plan div img {
+  width: 3.8rem;
+}
+#current-plan div p {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+#current-plan a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  font-size: 0.85rem;
+}
+#current-plan a:hover {
+  color: hsl(245, 75%, 62%);
+  text-decoration: none;
+}
+
+#plan-price {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+#button-pay,
+#button-cancel {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#button-pay {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  box-shadow: 0 1.8rem 1.5rem hsl(225, 100%, 94%);
+}
+#button-pay:hover {
+  background-color: hsl(245, 75%, 62%);
+}
+
+#button-cancel {
+  background: none;
+  color: hsl(224, 23%, 55%);
+}
+#button-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
 /*# sourceMappingURL=styles.css.map */
