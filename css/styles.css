@@ -22,6 +22,8 @@ picture {
   z-index: -1;
   left: 0;
   top: -60px;
+  width: 100%;
+  overflow: hidden;
 }
 
 #card {
@@ -70,26 +72,30 @@ h1,
 }
 #current-plan div {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 57%;
+  gap: 1rem;
 }
 #current-plan div img {
-  width: 3.8rem;
+  width: calc(2.5rem + 1vw);
 }
 #current-plan div p {
   display: flex;
   flex-direction: column;
-  line-height: 1.5rem;
+  line-height: calc(0.6rem + 0.5vw);
 }
 #current-plan a {
   color: hsl(245, 75%, 52%);
   font-weight: 900;
-  font-size: 0.85rem;
+  font-size: calc(0.5rem + 0.5vw);
 }
 #current-plan a:hover {
   color: hsl(245, 75%, 62%);
   text-decoration: none;
+}
+
+#plan-name,
+#plan-price {
+  font-size: calc(0.5rem + 0.5vw);
 }
 
 #plan-price {
